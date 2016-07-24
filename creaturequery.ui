@@ -1,0 +1,788 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CreatureQuery</class>
+ <widget class="QWidget" name="CreatureQuery">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>972</width>
+    <height>690</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>500</width>
+    <height>500</height>
+   </size>
+  </property>
+  <property name="sizeIncrement">
+   <size>
+    <width>500</width>
+    <height>500</height>
+   </size>
+  </property>
+  <property name="baseSize">
+   <size>
+    <width>500</width>
+    <height>500</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QWidget" name="gridLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>911</width>
+     <height>608</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="5" rowspan="4">
+     <widget class="QTableView" name="tableView">
+      <property name="minimumSize">
+       <size>
+        <width>600</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>650</width>
+        <height>450</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0" colspan="4">
+     <widget class="QGroupBox" name="creatureQueryGroup">
+      <property name="minimumSize">
+       <size>
+        <width>250</width>
+        <height>300</height>
+       </size>
+      </property>
+      <property name="title">
+       <string>Creature query</string>
+      </property>
+      <widget class="QWidget" name="gridLayoutWidget_2">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>20</y>
+         <width>251</width>
+         <height>281</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="1" column="0">
+         <widget class="QLabel" name="label">
+          <property name="text">
+           <string>Pos X:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QLineEdit" name="pZMin">
+          <property name="maximumSize">
+           <size>
+            <width>70</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="placeholderText">
+           <string>Min...</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="3">
+         <widget class="QLineEdit" name="pXMax">
+          <property name="maximumSize">
+           <size>
+            <width>70</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="placeholderText">
+           <string>Max...</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QLineEdit" name="pXMin">
+          <property name="maximumSize">
+           <size>
+            <width>70</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="placeholderText">
+           <string>Min...</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="2">
+         <widget class="QLabel" name="label_4">
+          <property name="text">
+           <string>-</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="label_3">
+          <property name="text">
+           <string>Pos Y:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="2">
+         <widget class="QLabel" name="label_2">
+          <property name="text">
+           <string>-</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QLineEdit" name="pYMin">
+          <property name="maximumSize">
+           <size>
+            <width>70</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="placeholderText">
+           <string>Min...</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="3">
+         <widget class="QLineEdit" name="pYMax">
+          <property name="maximumSize">
+           <size>
+            <width>70</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="placeholderText">
+           <string>Max...</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="label_5">
+          <property name="text">
+           <string>Pos Z:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="3">
+         <widget class="QLineEdit" name="pZMax">
+          <property name="maximumSize">
+           <size>
+            <width>70</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="placeholderText">
+           <string>Max...</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="2">
+         <widget class="QLabel" name="label_6">
+          <property name="text">
+           <string>-</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0">
+         <widget class="QLabel" name="label_7">
+          <property name="text">
+           <string>Orientation:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="2">
+         <widget class="QLabel" name="label_8">
+          <property name="text">
+           <string>-</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="1">
+         <widget class="QLineEdit" name="orientationMin">
+          <property name="maximumSize">
+           <size>
+            <width>70</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="placeholderText">
+           <string>Min...</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="3">
+         <widget class="QLineEdit" name="orientationMax">
+          <property name="maximumSize">
+           <size>
+            <width>70</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="placeholderText">
+           <string>Max...</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="0">
+         <widget class="QLabel" name="label_9">
+          <property name="text">
+           <string>Health:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="3">
+         <widget class="QLineEdit" name="curMaxHealth">
+          <property name="maximumSize">
+           <size>
+            <width>70</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="placeholderText">
+           <string>Max...</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="1">
+         <widget class="QLineEdit" name="curMinHealth">
+          <property name="maximumSize">
+           <size>
+            <width>70</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="placeholderText">
+           <string>Min...</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="2">
+         <widget class="QLabel" name="label_10">
+          <property name="text">
+           <string>-</string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="0">
+         <widget class="QLabel" name="label_11">
+          <property name="text">
+           <string>Mana:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="1">
+         <widget class="QLineEdit" name="curMinMana">
+          <property name="maximumSize">
+           <size>
+            <width>70</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="placeholderText">
+           <string>Min...</string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="3">
+         <widget class="QLineEdit" name="curMaxMana">
+          <property name="maximumSize">
+           <size>
+            <width>70</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="placeholderText">
+           <string>Max...</string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="2">
+         <widget class="QLabel" name="label_12">
+          <property name="text">
+           <string>-</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0" colspan="4">
+         <widget class="QComboBox" name="mapCB">
+          <property name="maximumSize">
+           <size>
+            <width>235</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <item>
+           <property name="text">
+            <string>Map...</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Eastern Kingdoms (0)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Kalimdor (1)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Outland (530)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Deeprun Tram (369)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Ragefire Chasm (389)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>The Stockades (34)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Deadmines (36)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Wailing Caverns (43)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Shadowfang Keep (33)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Blackfathom Deeps (48)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Razorfen Kraul (47)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Razorfen Downs (129)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Gnomeregan (90)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Scarlet Monastery (189)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Uldaman (70)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Zul'Farrak (209)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Maraudon (349)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Sunken Temple (109)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Blackrock Depths (230)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Blackrock Spire (229)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Scholomance (289)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Stratholme (329)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Dire Maul (429)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Zul'Gurub (309)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Onyxia's Lair (249)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Molten Core (409)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Blackwing Lair (469)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Ahn'Qiraj Ruins (509)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Ahn'Qiraj Temple (531)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Naxxramas (533)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Auchindoun: Auchenai Crypts (558)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Auchindoun: Mana Tombs (557)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Auchindoun: Sethekk Halls (556)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Auchindoun: Shadow Labyrinth (555)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Caverns of Time: Hillsbrad (560)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Caverns of Time: Black Morass (269)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Caverns of Time: Mount Hyjal (534)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Coilfang Reservoir: Slave Pens (547)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Coilfang Reservoir: Underbog (546)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Coilfang Reservoir: Steamvaults (545)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Coilfang Reservoir: Serpentshrine Cavern (548)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Hellfire Citadel: Hellfire Ramparts (543)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Hellfire Citadel: Blood Furnace (542)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Hellfire Citadel: Shattered Halls (540)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Hellfire Citadel: Magtheridon's Lair (544)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Tempest Keep: The Mechanar (554)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Tempest Keep: The Botanica (553)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Tempest Keep: The Arcatraz (552)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Tempest Keep: The Eye (550)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Magister's Terrace (585)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Karazhan (532)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Zul'Aman (568)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Gruul's Lair (565)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Black Temple (564)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Sunwell Plateau (580)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Alliance PvP Barracks (449)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Horde PvP Barracks (450)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Alterac Valley (30)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Arathi Basin (529)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Azshara Crater (37)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>The Eye of The Storm (566)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Warsong Gulch (489)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Nagrand Arena (559)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Blade's Edge Arena (562)</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <zorder>gridLayoutWidget_2</zorder>
+      <zorder>tableView</zorder>
+      <zorder>groupBox</zorder>
+      <zorder>tableView</zorder>
+      <zorder>groupBox</zorder>
+      <zorder>QueryButton</zorder>
+      <zorder>ClearButton</zorder>
+     </widget>
+    </item>
+    <item row="2" column="0" colspan="4">
+     <widget class="Line" name="line">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1">
+     <spacer name="verticalSpacer">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>40</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="3" column="1">
+     <widget class="QPushButton" name="QueryButton">
+      <property name="text">
+       <string>Query</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="2">
+     <widget class="QPushButton" name="ClearButton">
+      <property name="text">
+       <string>Clear</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0" colspan="4">
+     <widget class="QGroupBox" name="groupBox">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>50</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="title">
+       <string>Creature Template</string>
+      </property>
+      <widget class="QWidget" name="verticalLayoutWidget">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>20</y>
+         <width>251</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="QLabel" name="CreatureTemplateLabel">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="EditCreatureTemplateButton">
+          <property name="text">
+           <string>Edit Creature Template</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+    <item row="0" column="6">
+     <spacer name="horizontalSpacer">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>mapCB</tabstop>
+  <tabstop>pXMin</tabstop>
+  <tabstop>pXMax</tabstop>
+  <tabstop>pYMin</tabstop>
+  <tabstop>pYMax</tabstop>
+  <tabstop>pZMin</tabstop>
+  <tabstop>pZMax</tabstop>
+  <tabstop>orientationMin</tabstop>
+  <tabstop>orientationMax</tabstop>
+  <tabstop>curMinHealth</tabstop>
+  <tabstop>curMaxHealth</tabstop>
+  <tabstop>curMinMana</tabstop>
+  <tabstop>curMaxMana</tabstop>
+  <tabstop>EditCreatureTemplateButton</tabstop>
+  <tabstop>QueryButton</tabstop>
+  <tabstop>ClearButton</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,7 @@
+#include "strings_resource_manager.h"
+#include <cstdio>
+
+int main()
+{
+    return 0;
+}
